@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="base-style.css">
     <title>Saken's todo app</title>
   </head>
   <body>
-    <input id="todo-title" type="text" />
-    <input id="date-picker" type="date" />
-    <button onclick="addTodo()">Press me</button>
+    <div class="picker-container">
+      <input id="todo-title" type="text" />
+      <input id="date-picker" type="date" />
+      <button onclick="addTodo()">Press me</button>
+    </div>
     <div id="todo-list"></div>
     <script>
       const todos = [{
