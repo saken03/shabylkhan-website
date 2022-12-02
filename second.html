@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <a href="index.html">Back</a>
+    <br>
+    <button style="margin-top: 10px" onclick="increment()">Press me</button>
+    <div id="counted"></div>
+    <script>
+      let total = 0;
+      function increment() {
+        total++;
+        let counted = document.getElementById('counted');
+        let element = document.createElement('div');
+        element.innerText = total;
+        counted.innerHTML = total;
+      }
+    </script>
+  </body>
+</html>
